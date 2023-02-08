@@ -6,7 +6,7 @@ const Cart = () => {
 
   const cartTotalQuantity = useSelector((state) => state.cart.totalQuantity);
   const quantity = cartTotalQuantity;
-
+  console.log(cartTotalQuantity)
   const dispatch = useDispatch();
   const showCart = () => {
     dispatch(cartActions.showCart());
